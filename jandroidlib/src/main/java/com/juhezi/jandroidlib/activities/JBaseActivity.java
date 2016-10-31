@@ -14,6 +14,13 @@ public abstract class JBaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        initVariables();
+
+        initViews();
+
+        initData();
+
     }
 
     /**
@@ -29,6 +36,6 @@ public abstract class JBaseActivity extends AppCompatActivity {
     /**
      * 初始化数据
      */
-    protected abstract void initDate();
+    protected abstract void initData();
 
 }
