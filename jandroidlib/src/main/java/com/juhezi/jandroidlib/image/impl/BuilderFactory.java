@@ -7,13 +7,13 @@ import com.juhezi.jandroidlib.image.impl.glide.GlideBullider;
 /**
  * Created by qiao1 on 2016/10/31.
  */
-public class BuilderFactory extends AFactory {
+public class BuilderFactory {
+    
     private static String TAG = "BuilderFactory";
 
-    private final Class defaultClass = GlideBullider.class;
+    private final static Class defaultClass = GlideBullider.class;
 
-    @Override
-    public <T extends ABuilder> T createBuilder(Class<T> clazz) {
+    public static <T extends ABuilder> T createBuilder(Class<T> clazz) {
         ABuilder builder = null;
         try {
             builder = (ABuilder) Class.forName(clazz.getName()).newInstance();
@@ -28,7 +28,7 @@ public class BuilderFactory extends AFactory {
      *
      * @return
      */
-    public ABuilder createDefaultBulider() {
+    public static ABuilder createDefaultBulider() {
         return createBuilder(defaultClass);
     }
 }

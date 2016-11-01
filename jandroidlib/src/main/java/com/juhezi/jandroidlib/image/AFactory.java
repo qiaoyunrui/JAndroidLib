@@ -1,6 +1,7 @@
 package com.juhezi.jandroidlib.image;
 
 /**
+ * no use now
  * Created by qiao1 on 2016/10/31.
  */
 public abstract class AFactory {

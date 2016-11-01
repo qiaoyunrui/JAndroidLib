@@ -16,6 +16,6 @@ public class GlideImgLoader extends AImageLoader {
 
     @Override
     public void load() {
-
+        
     }
 }
