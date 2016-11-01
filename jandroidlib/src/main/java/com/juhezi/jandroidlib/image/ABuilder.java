@@ -1,5 +1,6 @@
 package com.juhezi.jandroidlib.image;
 
+import android.content.Context;
 import android.widget.ImageView;
 
 /**
@@ -13,9 +14,13 @@ public abstract class ABuilder {
 
     protected ImageView imageView;
 
+    protected Context context;
+
     public abstract ABuilder loadFrom(String url);
 
     public abstract ABuilder attachTo(ImageView imageView);
+
+    public abstract ABuilder with(Context context);
 
     public abstract <T extends AImageLoader> T build();
 }

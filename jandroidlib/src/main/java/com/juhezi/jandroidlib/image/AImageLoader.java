@@ -1,5 +1,6 @@
 package com.juhezi.jandroidlib.image;
 
+import android.content.Context;
 import android.widget.ImageView;
 
 /**
@@ -9,10 +10,12 @@ import android.widget.ImageView;
 public abstract class AImageLoader {
     private static String TAG = "AImageLoader";
 
-    private ImageView imageView;
-    private String url;
+    protected ImageView imageView;
+    protected String url;
+    protected Context context;
 
-    public AImageLoader(ImageView imageView, String url) {
+    public AImageLoader(Context context, ImageView imageView, String url) {
+        this.context = context;
         this.imageView = imageView;
         this.url = url;
     }
@@ -31,6 +34,14 @@ public abstract class AImageLoader {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    public Context getContext() {
+        return context;
+    }
+
+    public void setContext(Context context) {
+        this.context = context;
     }
 
     /**
