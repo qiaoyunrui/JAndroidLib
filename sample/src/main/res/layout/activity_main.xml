@@ -14,9 +14,11 @@
     <ImageView
         android:id="@+id/img_show_1"
         android:layout_width="match_parent"
+        android:src="@mipmap/ic_launcher"
         android:layout_height="wrap_content" />
 
     <ImageView
+        android:src="@mipmap/ic_launcher"
         android:id="@+id/img_show_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
