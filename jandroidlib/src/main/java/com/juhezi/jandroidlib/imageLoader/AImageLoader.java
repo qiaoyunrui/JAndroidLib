@@ -1,4 +1,4 @@
-package com.juhezi.jandroidlib.image;
+package com.juhezi.jandroidlib.imageLoader;
 
 import android.content.Context;
 import android.widget.ImageView;

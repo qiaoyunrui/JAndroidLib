@@ -1,10 +1,10 @@
-package com.juhezi.jandroidlib.image.impl.glide;
+package com.juhezi.jandroidlib.imageLoader.impl.glide;
 
 import android.content.Context;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.juhezi.jandroidlib.image.AImageLoader;
+import com.juhezi.jandroidlib.imageLoader.AImageLoader;
 
 /**
  * Created by qiao1 on 2016/10/31.

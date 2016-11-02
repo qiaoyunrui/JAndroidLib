@@ -1,8 +1,7 @@
-package com.juhezi.jandroidlib.image.impl;
+package com.juhezi.jandroidlib.imageLoader.impl;
 
-import com.juhezi.jandroidlib.image.ABuilder;
-import com.juhezi.jandroidlib.image.AFactory;
-import com.juhezi.jandroidlib.image.impl.glide.GlideBullider;
+import com.juhezi.jandroidlib.imageLoader.ABuilder;
+import com.juhezi.jandroidlib.imageLoader.impl.glide.GlideBullider;
 
 /**
  * Created by qiao1 on 2016/10/31.

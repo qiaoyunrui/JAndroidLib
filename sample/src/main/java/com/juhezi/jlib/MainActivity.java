@@ -1,14 +1,10 @@
 package com.juhezi.jlib;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 
 import com.juhezi.jandroidlib.activities.JBaseActivity;
-import com.juhezi.jandroidlib.image.ABuilder;
-import com.juhezi.jandroidlib.image.AImageLoader;
-import com.juhezi.jandroidlib.image.impl.BuilderFactory;
-import com.juhezi.jandroidlib.image.impl.glide.GlideBullider;
+import com.juhezi.jandroidlib.imageLoader.impl.BuilderFactory;
 
 public class MainActivity extends JBaseActivity {
 

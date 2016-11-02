@@ -1,11 +1,9 @@
-package com.juhezi.jandroidlib.image.impl.glide;
+package com.juhezi.jandroidlib.imageLoader.impl.glide;
 
 import android.content.Context;
-import android.text.TextUtils;
 import android.widget.ImageView;
 
-import com.juhezi.jandroidlib.image.ABuilder;
-import com.juhezi.jandroidlib.image.AImageLoader;
+import com.juhezi.jandroidlib.imageLoader.ABuilder;
 
 /**
  * GlideImgLoader的Bulider
