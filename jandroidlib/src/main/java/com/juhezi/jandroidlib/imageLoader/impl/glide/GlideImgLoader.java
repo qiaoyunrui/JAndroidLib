@@ -18,7 +18,6 @@ public class GlideImgLoader extends AImageLoader {
 
     @Override
     public void load() {
-        //最简单的图片加载
         Glide.with(context)
                 .load(url)
                 .into(imageView);

@@ -5,12 +5,15 @@ import android.widget.ImageView;
 
 import com.juhezi.jandroidlib.activities.JBaseActivity;
 import com.juhezi.jandroidlib.imageLoader.impl.BuilderFactory;
+import com.juhezi.jandroidlib.imageLoader.impl.picasso.PicassoBuilder;
 
 public class MainActivity extends JBaseActivity {
 
     private ImageView mImgShow1;
+    private ImageView mImgShow2;
 
-    private String url = "http://tse1.mm.bing.net/th?id=OIP.Mc734fe5b13c5116748ce0505ae01681bo0&pid=15.1";
+    private String url1 = "https://upload.wikimedia.org/wikipedia/commons/e/ea/Aqua_Spout.jpg";
+    private String url2 = "https://upload.wikimedia.org/wikipedia/commons/d/db/Cijin_District_view_from_Mt_QiHou.jpg";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,10 +21,18 @@ public class MainActivity extends JBaseActivity {
         setContentView(R.layout.activity_main);
 
         mImgShow1 = (ImageView) findViewById(R.id.img_show_1);
+        mImgShow2 = (ImageView) findViewById(R.id.img_show_2);
 
         BuilderFactory.createDefaultBulider()
                 .attachTo(mImgShow1)
-                .loadFrom(url)
+                .loadFrom(url1)
+                .with(this)
+                .build()
+                .load();
+
+        BuilderFactory.createBuilder(PicassoBuilder.class)
+                .attachTo(mImgShow2)
+                .loadFrom(url2)
                 .with(this)
                 .build()
                 .load();

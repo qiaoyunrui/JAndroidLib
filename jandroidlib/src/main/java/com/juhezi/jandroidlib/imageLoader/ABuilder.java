@@ -1,6 +1,7 @@
 package com.juhezi.jandroidlib.imageLoader;
 
 import android.content.Context;
+import android.text.TextUtils;
 import android.widget.ImageView;
 
 /**
@@ -23,4 +24,19 @@ public abstract class ABuilder {
     public abstract ABuilder with(Context context);
 
     public abstract <T extends AImageLoader> T build();
+
+    /**
+     * check the Context&ImageView&url can be use
+     */
+    public void checkParams() throws Exception {
+        if (TextUtils.isEmpty(url)) {
+            throw new Exception("Url can not be null or empty!!");
+        }
+        if (imageView == null) {
+            throw new Exception("ImageView can not be null!!");
+        }
+        if (context == null) {
+            throw new Exception("Context can not be null!!");
+        }
+    }
 }
